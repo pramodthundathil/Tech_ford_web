@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<!--
+Template name: Nova
+Template author: FreeBootstrap.net
+Author website: https://freebootstrap.net/
+License: https://freebootstrap.net/license
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Techford Information</title>
+  <link rel="shortcut icon" href="assets/images/logo-icon.png" type="image/x-icon">
+  <!-- ======= Google Font =======-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+  <!-- End Google Font-->
+
+  <!-- ======= Styles =======-->
+  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+  <!-- End Styles-->
+
+  <!-- ======= Theme Style =======-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- End Theme Style-->
+
+  <!-- ======= Apply theme =======-->
+  <script>
+    // Apply the theme as early as possible to avoid flicker
+    (function () {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+    })();
+  </script>
+
+</head>
+
+<body>
+
+
+  <!-- ======= Site Wrap =======-->
+  <div class="site-wrap">
+
+
+    <!-- ======= Header =======-->
+    <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+
+        <!-- Start Logo-->
+        <a class="navbar-brand w-auto" href="index.html">
+          <!-- If you use a text logo, uncomment this if it is commented-->
+          <!-- Vertex-->
+
+          <!-- If you plan to use an image logo, uncomment this if it is commented-->
+
+          <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo.png"
+            alt="FreeBootstrap.net image placeholder" style="max-width: 100px; height: auto;">
+
+          <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo.png"
+            alt="FreeBootstrap.net image placeholder" style="max-width: 100px; height: auto;">
+
+        </a>
+        <!-- End Logo-->
+
+        <!-- Start offcanvas-->
+        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
+          aria-labelledby="fbs__net-navbarsLabel">
+
+
+          <div class="offcanvas-header">
+            <div class="offcanvas-header-logo">
+              <!-- If you use a text logo, uncomment this if it is commented-->
+
+              <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
+
+              <!-- If you plan to use an image logo, uncomment this if it is commented-->
+              <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+
+
+                <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
+                  alt="FreeBootstrap.net image placeholder">
+
+                <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg"
+                  alt="FreeBootstrap.net image placeholder"></a>
+
+            </div>
+            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body align-items-lg-center">
+
+
+            <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="index.html#about">About</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="index.html#testimonials">Testimonials</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">Courses <i class="bi bi-chevron-down"></i></a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link scroll-link dropdown-item" href="vlsi-physical-design.html">VLSI Physical
+                      Design</a></li>
+                  <li><a class="nav-link scroll-link dropdown-item" href="mern-stack.html">MERN Stack Development</a>
+                  </li>
+                  <li><a class="nav-link scroll-link dropdown-item" href="logistics.html">Logistics & Supply Chain </a>
+                  </li>
+                  <li><a class="nav-link scroll-link dropdown-item" href="practical-accounting.html">Practical
+                      Accounting</a></li>
+                  <li><a class="nav-link scroll-link dropdown-item" href="sap-certification.html">SAP Certification
+                      </a></li>
+      
+
+                </ul>
+
+              </li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="contact.html">Contact</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- End offcanvas-->
+
+        <div class="ms-auto w-auto">
+
+
+          <div class="header-social d-flex align-items-center gap-1">
+            <a class="btn btn-success py-2 d-flex align-items-center gap-2" href="https://wa.me/919947273095?text=Hello%20Techford" target="_blank">
+              <i class="bi bi-whatsapp"></i> Connect
+            </a>
+
+            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+              data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars"
+              aria-label="Toggle navigation" aria-expanded="false">
+              <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="21" x2="3" y1="6" y2="6"></line>
+                <line x1="15" x2="3" y1="12" y2="12"></line>
+                <line x1="17" x2="3" y1="18" y2="18"></line>
+              </svg>
+              <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- ======= Main =======-->
+    <main>
+
+
+      <!-- ======= Hero =======-->
+      <section class="hero__v6 section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 mb-4 mb-lg-0">
+              <div class="row">
+                <div class="col-lg-11"><span class="hero-subtitle text-uppercase" data-aos="fade-up"
+                    data-aos-delay="0">Techford Information</span>
+                  <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">
+                    Transform Your Career with Professional Training</h1>
+                  <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">ISO certified IT,
+                    Logistics and Finance training institute empowering students with skills and confidence for today's
+                    dynamic business world.</p>
+                  <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300">
+                    <a class="glightbox btn btn-play d-inline-flex align-items-center gap-2"
+                      href="assets/videos/main_introduction.mp4" data-type="video">
+                      Play Video
+                      <i class="bi bi-play-circle-fill play-blink"></i>
+                    </a>
+
+
+
+                    <a class="btn btn-white-outline" href="#courses">Explore Courses</a>
+
+                  </div>
+                  <!-- <div class="logos mb-4" data-aos="fade-up" data-aos-delay="400"><span
+                      class="logos-title text-uppercase mb-4 d-block">Trusted by major companies worldwide</span>
+                    <div class="logos-images d-flex gap-4 align-items-center"><img
+                        class="img-fluid js-img-to-inline-svg"
+                        src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1"
+                        style="width: 110px;"><img class="img-fluid js-img-to-inline-svg"
+                        src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2"
+                        style="width: 80px;"><img class="img-fluid js-img-to-inline-svg"
+                        src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3"
+                        style="width: 110px;"></div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="hero-img">
+                <!-- <img class="img-card img-fluid" src="assets/images/card-expenses.png" alt="Image card" data-aos="fade-down" data-aos-delay="600"> -->
+                <img class="img-main img-fluid rounded-4" style="max-height: 400px; object-fit: contain;"
+                  src="assets/images/vlsi.png" alt="Hero Image" data-aos="fade-in" data-aos-delay="500">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero-->
+      </section>
+      <!-- End Hero-->
+
+      <!-- ======= About =======-->
+      <section class="about__v4 section" id="about">
+        <div class="container" style="margin-top: -60px;">
+          <div class="row">
+            <div class="col-md-6 order-md-2">
+              <div class="row justify-content-end">
+                <div class="col-md-11 mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                    data-aos-delay="0">Who we are</span>
+                  <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">Techford Information is the ISO certified IT,
+                    Logistics and Finance training institute.</h2>
+                  <div data-aos="fade-up" data-aos-delay="200">
+                    <p> We empower students with the skills and confidence needed to confidently navigate today's
+                      dynamic business world.</p>
+                    <p>
+
+                      Through live, project-based training integrated into our curriculum, we make the transition into
+                      corporate life both seamless and impactful. Our faculty lineup includes top-rated Chartered
+                      Accountants and specialized industry trainers.</p>
+
+                  </div>
+                  <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">Key Values and Vision</h4>
+                  <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Empowerment </span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Skills </span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Opportunities </span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Employment </span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Growth</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-wrap position-relative"><img class="img-fluid rounded-4"
+                  src="assets/images/about_2-min.jpg" alt="FreeBootstrap.net image placeholder" data-aos="fade-up"
+                  data-aos-delay="0">
+                <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"></i></div>
+                  <div>
+                    <h3 class="text-uppercase fw-bold">Mission Statement</h3>
+                    <p class="fs-5 mb-0" style="font-size: medium !important;">To empower individuals by
+                      providing accessible skill
+                      development, career
+                      guidance, and employment
+                      opportunities, thereby
+                      reducing unemployment and
+                      promoting economic
+                      self-sufficiency.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About-->
+
+      <!-- ======= Why Choose Us =======-->
+      <section class="section features__v2" id="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-lg-flex p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
+                <div class="row">
+                  <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+                    <div class="row">
+                      <div class="col-lg-11">
+                        <div class="h-100 flex-column justify-content-between d-flex">
+                          <div>
+                            <h2 class="mb-4">Why Choose Us</h2>
+                            <p class="mb-5">
+                              At Techford Information, we are an ISO-certified institute specializing in IT, Logistics,
+                              Finance, VLSI, and SAP training.
+                              With over a decade of educational excellence, we combine real-world expertise with live,
+                              project-based learning to
+                              ensure our students transition seamlessly into corporate life. Our team includes top-rated
+                              Chartered Accountants,
+                              industry veterans, and technology specialists dedicated to delivering cutting-edge skills,
+                              career guidance, and
+                              100% placement assistance.
+                            </p>
+                          </div>
+                          <div class="align-self-start">
+                            <a class="glightbox btn btn-play d-inline-flex align-items-center gap-2"
+                              href="TechFord_Brochure_20 pages.pdf" target="_blank">
+                              <i class="bi bi-download"></i> Download Brochure
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="row justify-content-end">
+                      <div class="col-lg-11">
+                        <div class="row">
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                            <div class="icon text-center mb-4"><i class="bi bi-award fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">ISO-Certified Excellence</h3>
+                            <p>Globally recognized quality standards in training and curriculum.</p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon text-center mb-4"><i class="bi bi-person-badge fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Expert Faculty</h3>
+                            <p>Top Chartered Accountants, VLSI experts, and industry trainers with 10+ years experience.
+                            </p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon text-center mb-4"><i class="bi bi-briefcase fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">100% Placement Assistance</h3>
+                            <p>Strong corporate tie-ups with 200+ top companies across industries.</p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon text-center mb-4"><i class="bi bi-laptop fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Hands-on Learning</h3>
+                            <p>Live projects, industrial tools, and 24×7 resource access to master practical skills.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Choose Us -->
+
+      <!-- ======= How it works =======-->
+      <section class="section howitworks__v1" id="how-it-works">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 text-center mx-auto">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">How it works</span>
+              <h2 data-aos="fade-up" data-aos-delay="100">Your Journey at Techford</h2>
+              <p data-aos="fade-up" data-aos-delay="200">
+                From enrollment to successful career placement, here’s how we help you transform your skills into
+                success.
+              </p>
+            </div>
+          </div>
+          <div class="row g-md-5">
+            <div class="col-md-6 col-lg-3">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
+                data-aos="fade-up" data-aos-delay="0">
+                <div data-aos="fade-right" data-aos-delay="500">
+                  <img class="arch-line" src="assets/images/arch-line.svg" alt="">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
+                <h3 class="fs-5 mb-4">Enroll in Your Course</h3>
+                <p>Choose from our specialized programs in IT, Finance, Logistics, VLSI, or SAP and register online or
+                  offline.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+              <div
+                class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1100">
+                  <img class="arch-line reverse" src="assets/images/arch-line-reverse.svg" alt="">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
+                <h3 class="fs-5 mb-4">Learn from Industry Experts</h3>
+                <p>Attend live, project-based sessions conducted by trainers with 10+ years of real-world experience.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1700">
+                  <img class="arch-line" src="assets/images/arch-line.svg" alt="">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
+                <h3 class="fs-5 mb-4">Hands-on Projects</h3>
+                <p>Work on real-world projects, access tools 24×7, and develop practical skills that employers value.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
+              <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
+                <h3 class="fs-5 mb-4">Placement & Career Growth</h3>
+                <p>Get 100% placement assistance with our network of 200+ recruiters and start your professional
+                  journey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End How it works-->
+
+      <!-- ======= Stats =======-->
+      <section class="stats__v3 section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex flex-wrap content rounded-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="rounded-borders">
+                  <div class="rounded-border-1"></div>
+                  <div class="rounded-border-2"></div>
+                  <div class="rounded-border-3"></div>
+                </div>
+
+                <!-- Students Trained -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="15000" data-purecounter-duration="2">0</span><span>+</span></h3>
+                    <p class="mb-0">Students Trained</p>
+                  </div>
+                </div>
+
+                <!-- Corporate Tie-ups -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="200" data-purecounter-duration="2">0</span><span>+</span></h3>
+                    <p class="mb-0">Corporate Recruiters</p>
+                  </div>
+                </div>
+
+                <!-- Placement Rate -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="100" data-purecounter-duration="2">0</span><span>%</span></h3>
+                    <p class="mb-0">Placement Assistance</p>
+                  </div>
+                </div>
+
+                <!-- Years of Experience -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="400">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="10" data-purecounter-duration="2">0</span><span>+</span></h3>
+                    <p class="mb-0">Years of Excellence</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Stats-->
+      <!-- ======= Courses =======-->
+      <section class="section services__v3" id="courses">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Our Courses</span>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Empowering Careers Through Industry-Focused
+                Programs</h2>
+            </div>
+          </div>
+          <div class="row g-4">
+
+            <!-- VLSI Physical Design -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div>
+                  <span class="icon text-center mb-3"><i class="bi bi-cpu fs-4"></i></span>
+                   <!-- <div class="icon text-center mb-4"><i class="bi bi-cpu fs-4"></i></div> -->
+                  <h3 class="fs-5 mb-3">VLSI Physical Design</h3>
+                  <p class="mb-4">Hands-on training from RTL to GDSII using industry-standard EDA tools, guided by 15+
+                    years experienced trainers, with 100% placement support.</p>
+                </div>
+                <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="vlsi-physical-design.html">
+                  <span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"></i></span><span>Read more</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- MERN Full-Stack Development -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div>
+                  <span class=" icon text-center mb-3"><i class="bi bi-code-slash fs-4"></i></span>
+                  <h3 class="fs-5 mb-3">MERN Full-Stack Development</h3>
+                  <p class="mb-4">Learn MongoDB, Express, React, and Node.js with live projects, one-on-one mentorship,
+                    and lifetime resource access.</p>
+                </div>
+                <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="mern-stack.html">
+                  <span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"></i></span><span>Read more</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Logistics & Supply Chain with SAP -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div>
+                  <span class="icon text-center mb-3"><i class="bi bi-truck fs-4"></i></span>
+                  <h3 class="fs-5 mb-3">Logistics & Supply Chain with SAP</h3>
+                  <p class="mb-4">Master logistics, warehousing, and transportation management with SAP MM, SD, and WM
+                    integration plus internship opportunities.</p>
+                </div>
+                <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="logistics.html">
+                  <span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"></i></span><span>Read more</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Practical Accounting with SAP -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div>
+                  <span class="icon mb-3 text-center" ><i class="bi bi-calculator fs-4" ></i></span>
+                  <h3 class="fs-5 mb-3">Practical Accounting with SAP</h3>
+                  <p class="mb-4">Gain expertise in GST, TDS, corporate accounting, SAP FICO, Tally, QuickBooks, and
+                    Zoho Books with internship certification.</p>
+                </div>
+                <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="practical-accounting.html">
+                  <span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"></i></span><span>Read more</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- SAP Certification Programs -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div>
+                  <span class="icon mb-4"><i class="bi bi-grid-3x3-gap fs-4"></i></span>
+                  <h3 class="fs-5 mb-3">SAP Certification Programs</h3>
+                  <p class="mb-4">Comprehensive SAP training in FI, MM, SD, WM, TM, HCM, and ABAP, aligned with global
+                    certification standards.</p>
+                </div>
+                <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="sap-certification.html">
+                  <span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"></i></span><span>Read more</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Advanced Excel & Power BI -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div>
+                  <span class="icon mb-4"><i class="bi bi-bar-chart-line fs-4"></i></span>
+                  <h3 class="fs-5 mb-3">Advanced Excel & Power BI</h3>
+                  <p class="mb-4">Learn advanced formulas, pivot tables, macros, and data visualization to enhance
+                    decision-making skills.</p>
+                </div>
+                <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="sap-certification.html">
+                  <span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"></i></span><span>Read more</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Courses -->
+
+      <!-- ======= Testimonials =======-->
+      <section class="section testimonials__v2" id="testimonials">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-5 mx-auto text-center">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Testimonials</span>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">What Our Students & Partners Are Saying</h2>
+              <p data-aos="fade-up" data-aos-delay="200">Real Stories of Success and Growth from Our Kerala Community
+              </p>
+            </div>
+          </div>
+          <div class="row g-4" data-masonry='{"percentPosition": true }'>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  Techford's Logistics & Supply Chain course helped me secure a job at the Cochin Port within three
+                  months of completion.
+                  The practical projects and industry exposure were exactly what I needed.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/testi/shanavas.jpg"
+                      alt=""></div>
+                  <div class="lh-base"><strong class="d-block">Mohammed Shahabas N N</strong><span>Logistics Coordinator,
+                      Kochi</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  I joined the Practical Accounting course in Ernakulam and landed my first job as a junior accountant
+                  in Thrissur.
+                  The Chartered Accountant faculty at Techford made complex topics simple to understand.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/testi/jithu.jpg"
+                      alt=""></div>
+                  <div class="lh-base"><strong class="d-block">Jithu C. Tomy</strong><span>Junior Accountant,
+                      Thrissur</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  Being from Calicut, I was looking for a flexible IT training program. The MERN Stack course here
+                  allowed me to work on real-time projects,
+                  and now I freelance for clients across Kerala and abroad.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-5-min.jpg"
+                      alt=""></div>
+                  <div class="lh-base"><strong class="d-block">Rahul P.</strong><span>Freelance Web Developer,
+                      Calicut</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  Techford's SAP Certification program opened the door for me to work in a multinational company in
+                  Kochi.
+                  The placement support team went above and beyond to help me prepare for interviews.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-3-min.jpg"
+                      alt=""></div>
+                  <div class="lh-base"><strong class="d-block">Deepthi S.</strong><span>SAP Analyst, Kochi</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  From being a commerce student in Kottayam to becoming a certified Power BI professional,
+                  Techford gave me the tools and confidence to start a successful career in data analytics.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-7-min.jpg"
+                      alt=""></div>
+                  <div class="lh-base"><strong class="d-block">Johnson P.</strong><span>Data Analyst, Kottayam</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  The faculty’s real-world experience and live training sessions gave me a clear understanding of the
+                  corporate environment.
+                  I’m now confidently working in the IT sector in Trivandrum.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-8-min.jpg"
+                      alt=""></div>
+                  <div class="lh-base"><strong class="d-block">Anju V.</strong><span>Software Engineer,
+                      Trivandrum</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials-->
+
+      <!-- ======= FAQ =======-->
+      <section class="section faq__v2" id="faq">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-6 col-lg-7 mx-auto text-center">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">FAQ</span>
+              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Frequently Asked Questions</h2>
+              <p data-aos="fade-up" data-aos-delay="100">Everything you need to know about our courses, training
+                process, and career support.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
+              <div class="faq-content">
+                <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
+
+                  <!-- Question 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        What courses does Techford offer?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse show" id="panelsStayOpen-collapseOne">
+                      <div class="accordion-body">
+                        We offer specialized training in VLSI Physical Design, MERN Full-Stack Development, Logistics &
+                        Supply Chain with SAP, Practical Accounting with SAP, SAP Certification Programs, Advanced
+                        Excel, and Power BI. All courses include hands-on projects and 100% placement assistance.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        What is the eligibility for joining a course?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo">
+                      <div class="accordion-body">
+                        Eligibility varies by program. Fresh graduates, final-year students, and working professionals
+                        are welcome. Some courses require basic knowledge in programming, electronics, or accounting,
+                        while others start from beginner level.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question 3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Do you provide placement assistance?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree">
+                      <div class="accordion-body">
+                        Yes, we provide 100% placement assistance through our network of 200+ corporate recruiters. We
+                        also offer interview preparation, resume building, and career guidance to ensure you are
+                        job-ready.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question 4 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Are the classes online or offline?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFour">
+                      <div class="accordion-body">
+                        We offer both online and offline learning options. All classes are live and interactive, with
+                        recordings available for revision. Our offline centers provide additional hands-on lab
+                        facilities.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question 5 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        Do you provide certification?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFive">
+                      <div class="accordion-body">
+                        Yes, all our courses come with an ISO-certified completion certificate. SAP, VLSI, and other
+                        specialized programs also include globally recognized certifications where applicable.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End FAQ-->
+
+
+      <!-- ======= Contact =======-->
+      <section class="section contact__v2" id="contact">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3"
+                data-aos="fade-up" data-aos-delay="0">Contact</span>
+              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Contact Us</h2>
+              <p data-aos="fade-up" data-aos-delay="100">
+                Reach out to us for course details, admissions, or any queries. Our team is ready to assist you with information about Techford and our offerings.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex gap-5 flex-column">
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="icon d-block"><i class="bi bi-telephone"></i></div><span> <span
+                      class="d-block">Phone</span><strong>+91 9947273095</strong></span>
+                </div>
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon d-block"><i class="bi bi-send"></i></div><span> <span
+                      class="d-block">Email</span><strong>teckfordkerala@gmail.com</strong></span>
+                </div>
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon d-block"><i class="bi bi-geo-alt"></i></div><span> <span
+                      class="d-block">Address</span>
+                    <address class="fw-bold">2nd floor, Portico downtown,Seaport Airport Road <br> Chitethukara, Kerala
+                    </address>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <div class="mb-4 rounded-4 overflow-hidden" style="height: 350px;">
+                  <iframe
+                    src="https://www.google.com/maps?q=10.002419519986326,76.34924687869776&hl=en&z=16&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center">
+              <a class="btn btn-primary fw-semibold" href="https://wa.me/919947273095?text=Hello%20Techford" target="_blank">
+                            <i class="bi bi-whatsapp"></i> Send Message</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact-->
+
+      <!-- ======= Footer =======-->
+      <footer class="footer pt-5 pb-5 bg-light">
+        <div class="container">
+          <!-- Top Row -->
+          <div class="row g-4 text-center text-md-start align-items-start">
+
+            <!-- Logo -->
+            <div class="col-12 col-md-3">
+              <img src="/assets/images/logo.png" style="max-width: 120px;" alt="Techford Logo" class="mb-3">
+            </div>
+
+            <!-- Social -->
+            <div class="col-12 col-md-3">
+              <h3 class="mb-3">Social</h3>
+              <ul class="list-unstyled d-flex justify-content-center justify-content-md-start gap-3 m-0">
+                <li><a href="https://www.facebook.com/share/1B8DTS1MzG/" target="_blank"><i
+                      class="bi bi-facebook fs-4"></i></a></li>
+                <li><a href="https://www.instagram.com/techford_?igsh=bHAxZWVhNzh0Mm1w" target="_blank"><i
+                      class="bi bi-instagram fs-4"></i></a></li>
+                <li><a href="https://wa.me/919947273095?text=Hello%20Techford" target="_blank"><i
+                      class="bi bi-whatsapp fs-4"></i></a></li>
+              </ul>
+            </div>
+
+            <!-- Address -->
+            <div class="col-12 col-md-3">
+              <h3 class="mb-3">Address</h3>
+              <p class="d-flex justify-content-center justify-content-md-start mb-2">
+                <i class="bi bi-geo-alt-fill me-3"></i>
+                <span>Techford Information<br>2nd floor, Portico Downtown<br>Seaport Airport Road, Chitethukara</span>
+              </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-12 col-md-3">
+              <h3 class="mb-3">Contact</h3>
+              <a class="d-flex justify-content-center justify-content-md-start mb-2"
+                href="mailto:teckfordkerala@gmail.com">
+                <i class="bi bi-envelope-fill me-3"></i><span>teckfordkerala@gmail.com</span>
+              </a>
+              <a class="d-flex justify-content-center justify-content-md-start mb-2" href="tel:+919947273095">
+                <i class="bi bi-telephone-fill me-3"></i><span>+91 9947273095</span>
+              </a>
+              <a class="d-flex justify-content-center justify-content-md-start" href="https://www.techford.in"
+                target="_blank">
+                <i class="bi bi-globe me-3"></i><span>www.techford.in</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Row -->
+          <div class="row credits pt-4 mt-4 border-top">
+            <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+              &copy;
+              <script>document.write(new Date().getFullYear());</script> Techford. All rights reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              Developed by <i class="bi bi-heart-fill text-danger"></i>
+              <a href="https://www.byteboot.in/" target="_blank">Byteboot Techno Solutions Pvt Ltd</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- End Footer-->
+
+    </main>
+  </div>
+
+  <!-- ======= Back to Top =======-->
+  <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+  <!-- End Back to top-->
+
+  <!-- ======= Javascripts =======-->
+  <style>
+    .play-blink {
+      font-size: 20px;
+      margin-left: 8px;
+      color: #f3f0f0;
+      animation: blinkPlay 4s infinite;
+    }
+
+    @keyframes blinkPlay {
+
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0.4;
+      }
+    }
+  </style>
+
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/gsap/gsap.min.js"></script>
+  <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendors/aos/aos.js"></script>
+  <script src="assets/vendors/purecounter/purecounter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/send_email.js"></script>
+  <!-- End JavaScripts-->
+</body>
+
+</html>
