@@ -1294,27 +1294,27 @@ h6 {
         /* Course specific background images */
         .vlsi-slide {
             background-image: 
-                              url('assets/images/carousel/vlci.jpg');
+                              url('../images/carousel/vlci.jpg');
         }
 
         .mern-slide {
             background-image: 
-                              url('assets/images/carousel/mern.jpg');
+                              url('../images/carousel/mern.jpg');
         }
 
         .logistics-slide {
             background-image:
-                          url('assets/images/carousel/logistics.jpg');
+                          url('../images/carousel/logistics.jpg');
         }
 
         .accounting-slide {
             background-image: 
-                              url('assets/images/carousel/account.jpg');
+                              url('../images/carousel/account.jpg');
         }
 
         .sap-slide {
             background-image: 
-                             url('assets/images/carousel/sap.jpg');
+                             url('../images/carousel/sap.jpg');
         }
 
         .slide-content {
