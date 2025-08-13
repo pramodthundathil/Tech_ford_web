@@ -1157,93 +1157,81 @@ License: https://freebootstrap.net/license
   <script src="assets/js/send_email.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
     <script>
-        // Carousel auto-play management
-        const carousel = document.getElementById('heroCarousel');
-        const progressBars = document.querySelectorAll('.progress-bar');
-        
-        // Reset progress bar animation when slide changes
-        carousel.addEventListener('slide.bs.carousel', function (event) {
-            progressBars.forEach(bar => {
-                bar.style.animation = 'none';
-                bar.style.width = '0%';
-            });
-            
-            setTimeout(() => {
-                const activeBar = event.relatedTarget.querySelector('.progress-bar');
-                if (activeBar) {
-                    activeBar.style.animation = 'progress 6s linear';
-                }
-            }, 100);
+    const carousel = document.getElementById('heroCarousel');
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    // Avoid removing animation to prevent flicker
+    carousel.addEventListener('slide.bs.carousel', function (event) {
+        progressBars.forEach(bar => {
+            bar.style.animationPlayState = 'paused';
+            bar.style.width = '0%';
         });
 
-        // Pause carousel on hover
-        carousel.addEventListener('mouseenter', function() {
-            bootstrap.Carousel.getInstance(carousel).pause();
-            const activeBar = document.querySelector('.carousel-item.active .progress-bar');
+        setTimeout(() => {
+            const activeBar = event.relatedTarget.querySelector('.progress-bar');
             if (activeBar) {
-                activeBar.style.animationPlayState = 'paused';
-            }
-        });
-
-        carousel.addEventListener('mouseleave', function() {
-            bootstrap.Carousel.getInstance(carousel).cycle();
-            const activeBar = document.querySelector('.carousel-item.active .progress-bar');
-            if (activeBar) {
+                activeBar.style.animation = 'none'; // force reset without repaint flicker
+                activeBar.offsetHeight; // trigger reflow silently
+                activeBar.style.animation = 'progress 6s linear';
                 activeBar.style.animationPlayState = 'running';
             }
-        });
+        }, 50);
+    });
 
-        // Initialize first progress bar
-        document.addEventListener('DOMContentLoaded', function() {
-            const firstProgressBar = document.querySelector('.carousel-item.active .progress-bar');
-            if (firstProgressBar) {
-                firstProgressBar.style.animation = 'progress 6s linear';
-            }
-        });
+    carousel.addEventListener('mouseenter', function() {
+        bootstrap.Carousel.getInstance(carousel).pause();
+        const activeBar = document.querySelector('.carousel-item.active .progress-bar');
+        if (activeBar) activeBar.style.animationPlayState = 'paused';
+    });
 
-        // Smooth scroll for course overview button
-        document.querySelectorAll('.course-overview-btn').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+    carousel.addEventListener('mouseleave', function() {
+        bootstrap.Carousel.getInstance(carousel).cycle();
+        const activeBar = document.querySelector('.carousel-item.active .progress-bar');
+        if (activeBar) activeBar.style.animationPlayState = 'running';
+    });
 
-        // Add touch/swipe support for mobile
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        carousel.addEventListener('touchstart', function(e) {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-
-        carousel.addEventListener('touchend', function(e) {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            const swipeThreshold = 50;
-            const diff = touchStartX - touchEndX;
-            
-            if (Math.abs(diff) > swipeThreshold) {
-                if (diff > 0) {
-                    // Swipe left - next slide
-                    bootstrap.Carousel.getInstance(carousel).next();
-                } else {
-                    // Swipe right - previous slide
-                    bootstrap.Carousel.getInstance(carousel).prev();
-                }
-            }
+    document.addEventListener('DOMContentLoaded', function() {
+        const firstProgressBar = document.querySelector('.carousel-item.active .progress-bar');
+        if (firstProgressBar) {
+            firstProgressBar.style.animation = 'progress 6s linear';
         }
-    </script>
+    });
+
+    // Smooth scroll for course overview
+    document.querySelectorAll('.course-overview-btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    carousel.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) bootstrap.Carousel.getInstance(carousel).next();
+            else bootstrap.Carousel.getInstance(carousel).prev();
+        }
+    }
+</script>
+
   <!-- End JavaScripts-->
 </body>
 
